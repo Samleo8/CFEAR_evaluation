@@ -1,0 +1,47 @@
+range res, 0.0432
+z min, 65
+min distance, 2.5
+max distance, 200
+k strongest, 12
+topic_filtered, /Navtech/Filtered
+radar_frameid, sensor_est
+dataset, oxford
+input_points_topic, /Navtech/Filtered
+scan_registered_latest_topic, radar_registered
+scan_registered_keyframe_topic, radar_registered_keyframe
+odom_latest_topic, radar_odom
+odom_keyframe_topic, radar_odom_keyframe
+use raw pointcloud, false
+submap keyframes, 1
+resolution r, 3
+resample factor f, 1
+min. sensor distance [m], 0
+min. sensor rot. [deg], 5
+use keyframe, true
+use initial guess, true
+radar reversed, false
+disable registration, false
+soft velocity constraint, false
+compensate, true
+cost type, "P2L"
+todom_est_topic, 
+gt_topic, 
+est_output_dir, /home/daniel/rosbag/oxford-eval-sequences/eval/2021-10-05_14:48/est/
+gt_output_dir, /home/daniel/rosbag/oxford-eval-sequences/eval/2021-10-05_14:48/gt/
+sequence, 2019-01-10-12-32-52-radar-oxford-10k
+job nr, 1
+
+nr_frames, 1143
+Surface points avg, 183.147727
+Surface points dev [σ], 857.603177
+Surface points count, 1144
+Filtering avg, 4.495178
+Filtering dev [σ], 1.091276
+Filtering count, 1144
+Filtered points avg, 4693.044580
+Filtered points dev [σ], 27093.077558
+Filtered points count, 1144
+Registration avg, 5.938970
+Registration dev [σ], 2.331586
+Registration count, 1144
+
